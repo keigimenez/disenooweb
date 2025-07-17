@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/calculadora.css" />
+</head>
+<body>
+    <header>
+    <div class="encabezado">
+        <h1 class="titulo-galeria">Caculadora</h1>
+        <p class="subtexto-galeria">Una calculadora es una herramienta que permite realizar operaciones matemáticas básicas de manera rápida y sencilla, facilitando el cálculo diario tanto en estudios como en el trabajo.</p>
+    </div>
+  <button onclick="location.href='proyectos.html'" class="volver-btn">← Volver</button>
+  </header>
+  <div class="calculadora">
+    <input type="text" id="pantalla" readonly />
+    <div class="botones">
+      <button onclick="borrar()">C</button>
+      <button onclick="agregar('/')">÷</button>
+      <button onclick="agregar('*')">×</button>
+      <button onclick="borrarUno()">⌫</button>
+
+      <button onclick="agregar('7')">7</button>
+      <button onclick="agregar('8')">8</button>
+      <button onclick="agregar('9')">9</button>
+      <button onclick="agregar('-')">−</button>
+
+      <button onclick="agregar('4')">4</button>
+      <button onclick="agregar('5')">5</button>
+      <button onclick="agregar('6')">6</button>
+      <button onclick="agregar('+')">+</button>
+
+      <button onclick="agregar('1')">1</button>
+      <button onclick="agregar('2')">2</button>
+      <button onclick="agregar('3')">3</button>
+      <button class="igual" onclick="calcular()">=</button>
+
+      <button onclick="agregar('0')">0</button>
+      <button onclick="agregar('.')">.</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Keila Giménez | Todos los derechos reservados</p>
+    <div class="social-icons">
+      <a href="https://youtu.be/oOKWF3IHu0I?si=9MBOuhzpn1jewT0Y" target="_blank">
+        <img src="img/icons8-youtube-24.png" alt="YouTube">
+      </a>
+      <a href="https://www.linkedin.com/in/keila-gimenez-632172368" target="_blank">
+        <img src="img/icons8-linkedin-48.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/keigimenez" target="_blank">
+        <img src="img/icons8-github-24.png" alt="Github">
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/calculadora.js"></script>
+</body>
+</html>

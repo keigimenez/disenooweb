@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #1b263b;
+  line-height: 1.6;
+  font-size: 1rem;
+  font-family: 'Lora', serif;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+main {
+  flex: 1 1 60%;
+  min-width: 20rem;
+}
+
+.sidebar {
+  flex: 0 0 20rem;
+  background: #e8eef5;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d1b2a;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  color: #f8f9fa;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-family: 'DM Serif Display', serif;
+  cursor: default;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: #f8f9fa;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Spectral SC', serif;
+  transition: color 0.2s;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  color: #778da9;
+  outline: none;
+}
+
+.portada img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  height: auto;
+  display: block;
+}
+
+#articulos h2,
+.formulario h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #1b263b;
+  font-weight: 700;
+  font-family: 'DM Serif Display', serif;
+}
+
+.articulo {
+  display: flex;
+  background: #ffffff;
+  border-left: 6px solid #415a77;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  align-items: flex-start;
+}
+
+.articulo:hover,
+.articulo:focus-within {
+  transform: scale(1.02);
+  outline: none;
+}
+
+.articulo img {
+  width: 180px;
+  height: auto;
+  margin-right: 1rem;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+     
+.articulo-contenido h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #0d1b2a;
+  font-family: 'DM Serif Display', serif;
+}
+
+.articulo-contenido p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.articulo-contenido time {
+  font-size: 0.875rem;
+  color: #778da9;
+  font-style: italic;
+}
+
+.formulario {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #415a77;
+  outline: none;
+}
+
+button {
+  background-color: #415a77;
+  color: white;
+  border: none;
+  padding: 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Spectral SC', serif;
+  transition: background-color 0.2s;
+}
+
+button:hover,
+button:focus {
+  background-color: #1b263b;
+  outline: none;
+}
+
+.sidebar h3 {
+  color: #0d1b2a;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #415a77;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: 'DM Serif Display', serif;
+}
+
+.personaje {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.personaje img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.personaje h4 {
+  color: #1b263b;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  font-family: 'Spectral SC', serif;
+}
+
+.personaje p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.eventos {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.eventos li {
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px dashed #ccc;
+  font-size: 1rem;
+}
+
+.fecha {
+  display: inline-block;
+  width: 5rem;
+  color: #0d1b2a;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.newsletter input {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.newsletter button {
+  width: 100%;
+  background-color: #2a623d;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.newsletter button:hover,
+.newsletter button:focus {
+  background-color: #3a7a4d;
+  outline: none;
+}
+
+.articulo-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s ease;
+    }
+
+.articulo-link:hover {
+  transform: scale(1.02);
+    }
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #f8f9fa;
+  padding: 1rem;
+  background-color: #1b263b;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.redes-sociales {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.redes-sociales a img {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.redes-sociales a:hover img,
+.redes-sociales a:focus img {
+  filter: grayscale(0);
+  outline: none;
+}
+
+.gryffindor { border-left-color: #ae0001; }
+.hufflepuff { border-left-color: #ffdb00; }
+.ravenclaw  { border-left-color: #222f5b; }
+.slytherin  { border-left-color: #2a623d; }
+.centauros  { border-left-color: #5a5a5a; }
+
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .articulo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .articulo img {
+    margin: 0 0 1rem 0;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+}
+
+#btnVolver {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 15px 20px;
+  font-size: 15px;
+  background-color: #ffffff;
+  color: rgb(17, 17, 17);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(161, 159, 159, 0.623);
+  transition: background-color 0.3s;
+}
+
+#btnVolver:hover {
+  background-color: #2d2d2e;
+}

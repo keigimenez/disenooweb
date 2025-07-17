@@ -1,0 +1,117 @@
+body {
+  font-family: 'Lora', serif;
+  background: linear-gradient(135deg, #A5C8E0, #305C8A); 
+  color: #F0F8FF;
+  padding: 2rem;
+  line-height: 1.8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #F0F8FF;
+  text-shadow: 1px 1px 4px #002A5C; 
+  letter-spacing: 0.1em;
+}
+
+.volver {
+  display: inline-block;
+  margin: 0 auto 2rem auto;
+  text-decoration: none;
+  color: #305C8A;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.3rem 0.7rem;
+  border: 2px solid #305C8A; 
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  width: max-content;
+  box-shadow: 2px 2px 8px rgba(48, 92, 138, 0.5);
+}
+
+.volver:hover {
+  background-color: #305C8A; 
+  color: #F0F8FF; 
+  box-shadow: 0 0 12px #305C8A;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #F0F8FF; 
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  flex-grow: 1;
+}
+
+main img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto 2rem auto;
+  border: 3px solid #A5C8E0;
+}
+
+p {
+  font-family: 'Spectral SC', serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 1.8rem;
+  color: #305C8A; 
+  text-align: justify;
+  text-shadow: 0 0 1px #E0F7FF; 
+}
+
+strong {
+  color: #002A5C; 
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+  color: #A5C8E0; 
+}
+
+iframe {
+  display: block;
+  margin: 2rem auto 0 auto;
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgb(0, 0, 0 / 0.1);
+  border: none;
+}
+
+footer {
+  background-color: #002A5C;
+  color: #F0F8FF;
+  text-align: center;
+  padding: 2rem 2rem; 
+  font-family: 'Lora', serif;
+  font-weight: 700; 
+  font-size: 1.1rem; 
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none; 
+  font-weight: 600; 
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

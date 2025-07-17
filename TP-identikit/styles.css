@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    line-height: 1.6;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #ffffff;
+    color: #ffffff;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Cardo", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 15px 20px;
+    background-color: #000000ec;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li{
+    text-decoration: none;
+    margin: 0 0.75em 0 0.75em;
+  }
+
+  nav a:hover {
+    color: #807e81;
+  }
+
+  img{
+    border-radius: 10px;
+  }
+
+  section {
+    max-width: 600px;
+    margin: auto;
+    background: #363636;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(146, 145, 145, 0.1);
+  }
+  
+
+  table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color:#363636;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #363636;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #363636;
+}
+
+tr:hover {
+    background-color: #363636;
+    cursor: pointer;
+}
+
+#btnVolver {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 15px 20px;
+  font-size: 15px;
+  background-color: #ffffff;
+  color: rgb(17, 17, 17);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(161, 159, 159, 0.623);
+  transition: background-color 0.3s;
+}
+
+#btnVolver:hover {
+  background-color: #2d2d2e;
+}
+
+.container {
+  background: rgb(36, 36, 36);
+  justify-content: center;
+  align-items:center;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 500px;
+  text-align: center;
+}
+
+.question {
+  margin: 20px 0;
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-style: normal
+}
+
+button {
+  display: block;
+  margin: 8px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #919191;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+aside {
+  background-color: #7e7c7c;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  border-radius: 8%;
+  display: inline-block;
+  width: 20%;
+  height: 600px;
+  vertical-align: top;
+}
+
+aside ul {
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+aside ul li a {
+  color: #ffffff; 
+  font-family: "Cardo", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+aside ul li a:hover {
+  color: #000000; 
+}
+
+
+.condiciones {
+  background-color: #2b2b2bec;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  margin-bottom: 3%;
+  border-radius: 8;
+  width: 78%;
+  height: 600px;
+  vertical-align: top;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  border-radius: 6%;
+  margin-top: 4%;
+  margin-bottom: 0;
+}
+
+  footer {
+      margin-top: 5%;
+      text-align: center;
+      font-size: 0.9em;
+      color: #7e7c7c;
+      background-color: #000000ec;
+      padding: 40px 0; 
+      min-height: 80px;
+  }
+  

@@ -1,0 +1,157 @@
+:root {
+  --navy: #1e3a5f;
+  --teal: #3faaa8;
+  --beige: #f4efe9;
+  --sky: #a0d2eb;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--white);
+  color: var(--navy);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--beige);
+  color: var(--navy);
+  padding: 30px 20px 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.volver-btn {
+  margin: 20px auto 0 auto;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 15px;
+  color: var(--white);
+  background: var(--sky);
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.volver-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: var(--teal);
+  z-index: -1;
+  transition: all 250ms ease-in-out;
+}
+
+.volver-btn:hover {
+  color: var(--white);
+}
+
+.volver-btn:hover::before {
+  width: 100%;
+}
+
+main {
+  flex-grow: 1;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--beige);
+}
+
+.audio-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.audio-item {
+  max-width: 220px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.audio-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid var(--sky);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.audio-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#audio-player,
+#player {
+  display: none;
+}
+
+footer {
+  background-color: var(--navy);
+  color: var(--white);
+  text-align: center;
+  padding: 25px 15px 10px;
+  font-size: 0.9rem;
+  font-family: 'Nunito', sans-serif;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+  margin-top: auto;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img {
+  width: 26px;
+  height: 26px;
+  filter: brightness(95%);
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  filter: brightness(120%);
+}

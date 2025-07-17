@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galería</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/galeria.css" />
+</head>
+<body>
+  <header>
+  <div class="encabezado">
+    <h1 class="titulo-galeria">Galería Interactiva - Marina</h1>
+    <p class="subtexto-galeria">Una galería interactiva de animales marinos ofrece una experiencia visual y educativa donde los usuarios pueden explorar diferentes especies marinas.</p>
+  </div>
+  <button onclick="location.href='proyectos.html'" class="volver-btn">← Volver</button>
+  </header>
+  <main class="contenido">
+    <div class="swiper relative rounded-xl overflow-hidden shadow-2xl">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide relative">
+          <img src="img/dolphin-203875_1920 (1).jpg" alt="Aurora boreal" class="w-full h-auto max-h-[80vh] object-cover" />
+          <div class="image-overlay">
+            <h3 class="text-xl font-semibold">Delfin</h3>
+            <p class="text-gray-200">El delfín es un mamífero marino inteligente y sociable que nada rápido en el océano.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide relative">
+          <img src="img/north-sea-7368699_1920.jpg" alt="Ciudad futurista" class="w-full h-auto max-h-[80vh] object-cover" />
+          <div class="image-overlay">
+            <h3 class="text-xl font-semibold">Lobo Marino</h3>
+            <p class="text-gray-200">El lobo marino es un mamífero ágil que vive en la costa y nada bien.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide relative">
+          <img src="img/orca-2434067_1920.jpg" alt="Paraíso tropical" class="w-full h-auto max-h-[80vh] object-cover" />
+          <div class="image-overlay">
+            <h3 class="text-xl font-semibold">Orca</h3>
+            <p class="text-gray-200">La orca es un delfín marino grande y social que vive en grupos llamados manadas.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide relative">
+          <img src="img/penguins-4710224_1920.jpg" alt="Pingüinos" class="w-full h-auto max-h-[80vh] object-cover" />
+          <div class="image-overlay">
+            <h3 class="text-xl font-semibold">Pinguino</h3>
+            <p class="text-gray-200">Los pingüinos son aves que nadan bien y viven en zonas frías.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide relative">
+          <img src="img/whale-1850235_1920.jpg" alt="Ballena" class="w-full h-auto max-h-[80vh] object-cover" />
+          <div class="image-overlay">
+            <h3 class="text-xl font-semibold">Ballena Azul</h3>
+            <p class="text-gray-200">La ballena es un mamífero marino grande que nada en océanos y se comunica con sonidos.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide relative">
+          <img src="img/animal-1867075_1920.jpg" alt="Atardecer Caribeño" class="w-full h-auto max-h-[80vh] object-cover" />
+          <div class="image-overlay">
+            <h3 class="text-xl font-semibold">Tiburon</h3>
+            <p class="text-gray-200">El tiburón es un pez grande y fuerte que nada rápido en el océano.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <div class="fullscreen-center">
+      <p class="indicacion">Presiona las flechas o desliza para navegar</p>
+      <button id="fullscreen-btn" class="fullscreen-btn">Ver en pantalla completa</button>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 Keila Giménez | Todos los derechos reservados.
+    <div class="social-icons">
+      <a href="https://youtu.be/oOKWF3IHu0I?si=9MBOuhzpn1jewT0Y" target="_blank">
+        <img src="img/icons8-youtube-24.png" alt="YouTube">
+      </a>
+      <a href="https://www.linkedin.com/in/keila-gimenez-632172368" target="_blank">
+        <img src="img/icons8-linkedin-48.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/keigimenez" target="_blank">
+        <img src="img/icons8-github-24.png" alt="Github">
+      </a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/galeria.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>botonera</title>
+  <link rel="stylesheet" href="css/botonera.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <div class="encabezado">
+        <h1 class="titulo-galeria">Botonera - Musica Clasica</h1>
+        <p class="subtexto-galeria">Una botonera de música clásica es una interfaz que permite seleccionar y reproducir fácilmente piezas musicales, ofreciendo una forma práctica y ordenada de disfrutar obras clásicas.</p>
+    </div>
+  <button onclick="location.href='proyectos.html'" class="volver-btn">← Volver</button>
+  </header>
+  <main>
+    <div class="audio-buttons">
+      <div class="audio-item">
+        <img src="img/clasico1.jpg" alt="Beethoven" class="audio-img" data-audio="piotr-ilitch-march-of-the-toy-soldiers.mp3" />
+      </div>
+      <div class="audio-item">
+        <img src="img/clasico3.jpg" alt="Mozart" class="audio-img" data-audio="mozart-clip-1.mp3" />
+      </div>
+      <div class="audio-item">
+        <img src="img/clasico2.jpg" alt="Bach" class="audio-img" data-audio="nocturne-chopin.mp3" />
+      </div>
+    </div>
+    <audio id="player"></audio>
+  </main>
+  <footer>
+    &copy; 2025 Keila Giménez | Todos los derechos reservados.
+    <div class="social-icons">
+      <a href="https://youtu.be/oOKWF3IHu0I?si=9MBOuhzpn1jewT0Y" target="_blank">
+        <img src="img/icons8-youtube-24.png" alt="YouTube">
+      </a>
+      <a href="https://www.linkedin.com/in/keila-gimenez-632172368" target="_blank">
+        <img src="img/icons8-linkedin-48.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/keigimenez" target="_blank">
+        <img src="img/icons8-github-24.png" alt="Github">
+      </a>
+    </div>
+  </footer>
+  <script src="js/botonera.js"></script>
+</body>
+</html>
